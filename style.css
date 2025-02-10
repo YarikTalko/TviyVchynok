@@ -9,29 +9,45 @@ html {
 body {
     margin: 0;
     --base-padding: 160px;
-    font-family: e-Ukraine, sans-serif;
+    font-family: e-Ukraine-Regular, sans-serif;
+}
+
+hr {
+    border-top: 1px solid #C9C9C9;
 }
 
 @font-face {
-    font-family: e-Ukraine;
+    font-family: e-Ukraine-Regular;
     src: url("/fonts/e-Ukraine/e-Ukraine-Regular.otf");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: e-Ukraine;
+    font-family: e-Ukraine-Bold;
     src: url("/fonts/e-Ukraine/e-Ukraine-Bold.otf");
     font-weight: bold;
 }
 
 @font-face {
-    font-family: e-Ukraine-Head;
+    font-family: e-Ukraine-Medium;
+    src: url("/fonts/e-Ukraine/e-Ukraine-Medium.otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: e-Ukraine-Light;
+    src: url("/fonts/e-Ukraine/e-Ukraine-Light.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: e-Ukraine-Head-Regular;
     src: url("/fonts/e-Ukraine Head/e-UkraineHead-Regular.otf");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: e-Ukraine-Head;
+    font-family: e-Ukraine-Head-Bold;
     src: url("/fonts/e-Ukraine Head/e-UkraineHead-Bold.otf");
     font-weight: bold;
 }
@@ -94,7 +110,7 @@ body {
 }
 
 .banner-main-title {
-    font-family: e-Ukraine-Head, sans-serif;
+    font-family: e-Ukraine-Head-Regular, sans-serif;
     font-size: 64px;
     color: #F9CF01;
 }
@@ -105,4 +121,69 @@ body {
 
 .banner-sub-title-yellow {
     color: #F9CF01;
+}
+
+.help-container {
+    padding: 0 var(--base-padding);
+    display: flex;
+    justify-content: space-between;
+    margin: 120px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.help-hr {
+    border-right: 1px solid #C9C9C9;
+}
+
+.help-title {
+    font-family: e-Ukraine-Medium, sans-serif;
+    color: #2B59FF;
+    font-size: 48px;
+    margin: 0 0 32px 0;
+}
+
+.help-sub-title {
+    font-size: 20px;
+}
+
+.about-container {
+    padding: 100px var(--base-padding) 100px;
+    background-color: #F2F2EF;
+}
+
+#about {
+    font-family: e-Ukraine-Bold, sans-serif;
+    font-size: 34px;
+    /*padding-top: 100px;*/
+}
+
+.about-text {
+    text-indent: 2em;
+    margin: 24px 0;
+    font-family: e-Ukraine-Light, sans-serif;
+}
+
+#our-team {
+    font-size: 24px;
+    margin: 78px 0;
+}
+
+.team {
+    display: flex;
+}
+
+.team-member {
+    display: flex;
+}
+
+.team-member-photo {
+    border-radius: 70px;
+    width: 175px;
+    height: 190px;
+}
+
+.team-member-name {
+    font-family: e-Ukraine-Light, sans-serif;
+    margin: auto 47px;
 }
