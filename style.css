@@ -14,6 +14,7 @@ body {
 
 hr {
     border-top: 1px solid #C9C9C9;
+    margin-bottom: 50px;
 }
 
 @font-face {
@@ -148,14 +149,14 @@ hr {
 }
 
 .about-container {
-    padding: 100px var(--base-padding) 100px;
+    padding: 0 var(--base-padding) 120px;
     background-color: #F2F2EF;
 }
 
-#about {
+.main-header {
     font-family: e-Ukraine-Bold, sans-serif;
     font-size: 34px;
-    /*padding-top: 100px;*/
+    padding-top: 100px;
 }
 
 .about-text {
@@ -175,6 +176,7 @@ hr {
 
 .team-member {
     display: flex;
+    width: 40%;
 }
 
 .team-member-photo {
@@ -186,4 +188,50 @@ hr {
 .team-member-name {
     font-family: e-Ukraine-Light, sans-serif;
     margin: auto 47px;
+    text-align: center;
+}
+
+.activity-container {
+    padding: 0 var(--base-padding) 120px;
+}
+
+.activity-item {
+    display: flex;
+}
+
+.activity-item:not(:first-child) {
+    margin-top: 64px;
+}
+
+.activity-item:nth-child(odd)  {
+    flex-direction: row-reverse;
+}
+
+.activity-item:nth-child(odd) .activity-item-photo {
+    margin-left: 40px;
+}
+
+.activity-item:nth-child(even) .activity-item-photo {
+    margin-right: 40px;
+}
+
+.activity-item-text {
+    margin: 40px 0;
+}
+
+.activity-item-title {
+    font-family: e-Ukraine-Medium, sans-serif;
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+
+.activity-item-subtitle {
+    font-family: e-Ukraine-Light, sans-serif;
+    text-indent: 2em;
+}
+
+.activity-item-photo {
+    border-radius: 12px;
+    width: 525px;
+    height: 305px;
 }
