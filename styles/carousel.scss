@@ -1,0 +1,74 @@
+@mixin circle() {
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+}
+
+$bgBlue: #001d38;
+$carItem: #0a2640;
+
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  grid-gap: 1em;
+  overflow: hidden;
+  width: 100%;
+
+  & > .carousel {
+    display: flex;
+    grid-gap: 13px;
+    transition: all 1s ease-in-out;
+  }
+}
+
+.carousel-item {
+  border: 1px solid #C9C9C9;
+  border-radius: 10px;
+  width: 187.5px;
+  height: 112.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > img {
+    border-radius: inherit;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+}
+
+.carousel-map {
+  margin-top: 1em;
+  text-align: center;
+
+  & > button {
+    all: unset;
+    background: lighten(#C9C9C9, 10);
+    cursor: pointer;
+    margin: 0 0.125em;
+    position: relative;
+    user-select: none;
+    @include circle();
+
+    &.active {
+      &:after {
+        background: #232B2B;
+        content: '';
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        @include circle();
+      }
+    }
+  }
+}

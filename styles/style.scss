@@ -1,0 +1,390 @@
+$large: 992px;
+$extraLarge: 1200px;
+$extraExtraLarge: 1920px;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  --base-padding: 160px;
+  --banner-font-size: 64px;
+  --charity-font-size: 24px;
+  font-family: e-Ukraine-Regular, sans-serif;
+  color: #232B2B;
+
+  @media only screen and (max-width: $extraExtraLarge) {
+    --banner-font-size: 54px;
+    --charity-font-size: 20px;
+  }
+}
+
+hr {
+  border-top: 1px solid #C9C9C9;
+  margin-top: 32px;
+  margin-bottom: 50px;
+}
+
+@font-face {
+  font-family: e-Ukraine-Regular;
+  src: url("/fonts/e-Ukraine/e-Ukraine-Regular.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: e-Ukraine-Bold;
+  src: url("/fonts/e-Ukraine/e-Ukraine-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: e-Ukraine-Medium;
+  src: url("/fonts/e-Ukraine/e-Ukraine-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: e-Ukraine-Light;
+  src: url("/fonts/e-Ukraine/e-Ukraine-Light.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: e-Ukraine-Head-Regular;
+  src: url("/fonts/e-Ukraine Head/e-UkraineHead-Regular.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: e-Ukraine-Head-Bold;
+  src: url("/fonts/e-Ukraine Head/e-UkraineHead-Bold.otf");
+  font-weight: bold;
+}
+
+.header {
+  background-color: #232B2B;
+  width: 100%;
+  overflow: hidden;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--base-padding);
+  height: 113px;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+
+  @media only screen and (max-width: $extraExtraLarge) {
+    height: 90px;
+  }
+}
+
+.header-center {
+  display: flex;
+  gap: 32px;
+}
+
+.header-center a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 16px 10px;
+}
+
+.btn-support {
+  font-size: 16px;
+  color: white;
+  background-color: #2B59FF;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+.logo {
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner-container {
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  top: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 0 var(--base-padding);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.banner-main-title {
+  font-family: e-Ukraine-Head-Regular, sans-serif;
+  font-size: var(--banner-font-size);
+  line-height: 1.2;
+  color: #F9CF01;
+}
+
+.banner-sub-title {
+  font-size: 34px;
+}
+
+.banner-sub-title-yellow {
+  color: #F9CF01;
+}
+
+.help-container {
+  padding: 0 var(--base-padding);
+  display: flex;
+  justify-content: space-between;
+  margin: 120px 0;
+  background-color: white;
+  text-align: center;
+}
+
+.help-hr {
+  border-right: 1px solid #C9C9C9;
+}
+
+.help-title {
+  font-family: e-Ukraine-Medium, sans-serif;
+  color: #2B59FF;
+  font-size: 48px;
+  margin: 0 0 32px 0;
+}
+
+.help-sub-title {
+  font-size: 20px;
+  color: #232B2B;
+}
+
+.about-container {
+  padding: 0 var(--base-padding) 120px;
+  background-color: #F2F2EF;
+}
+
+.main-header {
+  font-family: e-Ukraine-Bold, sans-serif;
+  font-size: 34px;
+  padding-top: 100px;
+  margin: 0;
+}
+
+.about-text {
+  text-indent: 2em;
+  margin: 24px 0;
+  font-family: e-Ukraine-Light, sans-serif;
+  line-height: 1.8;
+}
+
+.our-team {
+  font-size: 24px;
+  margin: 78px 0 48px;
+}
+
+.team {
+  display: flex;
+}
+
+.team-member {
+  display: flex;
+  width: 40%;
+}
+
+.team-member-photo {
+  border-radius: 70px;
+  width: 175px;
+  height: 190px;
+}
+
+.team-member-name {
+  font-family: e-Ukraine-Light, sans-serif;
+  margin: auto 47px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.activity-container {
+  padding: 0 var(--base-padding) 120px;
+}
+
+.activity-item {
+  display: flex;
+}
+
+.activity-item:not(:first-child) {
+  margin-top: 64px;
+}
+
+.activity-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.activity-item:nth-child(odd) .activity-item-photo {
+  margin-left: 40px;
+}
+
+.activity-item:nth-child(even) .activity-item-photo {
+  margin-right: 40px;
+}
+
+.activity-item-text {
+  margin: auto 0;
+}
+
+.activity-item-title {
+  font-family: e-Ukraine-Medium, sans-serif;
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.activity-item-subtitle {
+  font-family: e-Ukraine-Light, sans-serif;
+  text-indent: 2em;
+  line-height: 1.8;
+}
+
+.activity-item-photo {
+  border-radius: 12px;
+  width: 525px;
+  height: 305px;
+  //aspect-ratio: 657/380;
+  //width: 40%;
+  //object-fit: contain;
+}
+
+.partners-container {
+  padding: 0 var(--base-padding) 100px;
+  background-color: #F2F2EF;
+}
+
+.arrows-and-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows {
+  display: flex;
+  margin-top: auto;
+}
+
+.arrows div:first-child {
+  margin-right: 10px;
+}
+
+.fund-help-container {
+  padding: 0 var(--base-padding) 100px;
+}
+
+.charity-container {
+  width: 100%;
+  height: auto;
+  background-color: #F2F2EF;
+  border-radius: 23px;
+  display: flex;
+  justify-content: space-around;
+  padding: 18px 10px;
+}
+
+.charity-header {
+  padding-top: 83px;
+  font-family: e-Ukraine-Medium, sans-serif;
+  font-size: 28px;
+}
+
+.charity-table {
+  font-size: var(--charity-font-size);
+  line-height: 1.4;
+}
+
+.main-td {
+  width: 30%;
+  vertical-align: top;
+}
+
+.qr {
+  border-radius: 23px;
+}
+
+.footer {
+  background-color: #232B2B;
+  padding: 0 var(--base-padding);
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.rights {
+  color: #ffffff;
+  font-size: 12px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.footer-container {
+  padding-top: 30px;
+  display: flex;
+}
+
+.main-logo {
+  margin: 0 auto;
+}
+
+.main-logo img {
+  width: 150px;
+}
+
+.footer-item {
+  color: #ffffff;
+  margin-right: 100px;
+}
+
+.footer-item:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-item:last-child {
+  margin-right: 0;
+}
+
+.footer-line {
+  padding-bottom: 16px;
+}
+
+.footer-line:first-child {
+  padding-bottom: 32px;
+}
+
+.footer-line:last-child {
+  padding-bottom: 0;
+}
+
+.footer-line a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-color: #858585;
+}
+
+.image-link img {
+  vertical-align: middle;
+}

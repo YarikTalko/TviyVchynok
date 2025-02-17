@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/carousel.css">
     <link rel="icon" type="image/svg" href="photos/favicon.svg">
     <title>Твій вчинок</title>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/carousel.js" defer></script>
 </head>
 <body>
 
 <div class="header">
     <div>
-        <img class="logo" src="photos/logo.svg" alt="logo">
+        <img class="logo" src="photos/logos/logo.svg" alt="logo">
     </div>
     <div class="header-center">
         <a href="#about">ПРО ФОНД</a>
@@ -43,7 +46,7 @@
 <div class="help-container">
     <div class="help-element">
         <div class="help-title">
-            > 40 бригадам
+            > 40 <span class="font-24">бригадам</span>
         </div>
         <div class="help-sub-title">
             Надано допомоги військовим
@@ -52,7 +55,7 @@
     <div class="help-hr"></div>
     <div class="help-element">
         <div class="help-title">
-            > 1000 чол.
+            > 1000 <span class="font-24">чол.</span>
         </div>
         <div class="help-sub-title">
             Допомогли військовим в<br/>реабілітації
@@ -61,7 +64,7 @@
     <div class="help-hr"></div>
     <div class="help-element">
         <div class="help-title">
-            > 7000 чол.
+            > 7000 <span class="font-24">чол.</span>
         </div>
         <div class="help-sub-title">
             Надано допомоги цивільним
@@ -86,7 +89,7 @@
         волонтери регулярно виїжджають на передову, співпрацюючи з іншими фондами, щоб максимально розширити
         допомогу.
     </div>
-    <div id="our-team">
+    <div class="our-team">
         Наша команда:
     </div>
     <div class="team">
@@ -167,8 +170,129 @@
     </div>
 </div>
 
-<div class="partners-container" id="partners">
+<div class="partners-container">
+    <div class="arrows-and-header">
+        <h1 class="main-header" id="partners">Наші партнери</h1>
+    </div>
+    <hr>
+    <div class="center">
+        <div class="wrapper">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/Monomax.jpg" alt="Monomax-фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/АЗ-Платформа.png" alt="АЗ-Платформа-фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/АНЦ.png" alt="АНЦ-фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/Ашан.webp" alt="Ашан-фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/БФ-Амбрелла.jpeg" alt="БФ-Амбрелла-фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/БФ-Родинне-дерево.webp" alt="БФ-Родинне-дерево-фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/ГО-ЗККСОУ.jpeg" alt="ГО-ЗККСОУ-фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/Док-Юа.png" alt="Док-Юа-фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/МЦ-Довіра.png" alt="МЦ-Довіра-фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/МЦ-Медіол.png" alt="МЦ-Медіол-фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/ОККО.png" alt="ОККО-фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/УГ-Норвегія.png" alt="УГ-Норвегія-фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/partners_photos/ІТтО.png" alt="ІТтО-фото">
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="carousel-map">
+        <button class="active first"></button>
+        <button class="second"></button>
+        <button class="third"></button>
+    </div>
+</div>
+
+<div class="fund-help-container">
+    <h1 class="main-header" id="found-help">Допомога</h1>
+    <hr>
+    <div class="charity-container">
+        <div class="charity-sub-container">
+            <p class="charity-header">Реквізити банку</p>
+            <table class="charity-table">
+                <tr>
+                    <td class="main-td">Банківські реквізити</td>
+                    <td>
+                        Одержувач: БФ ТВІЙ ВЧИНОК<br/>
+                        ЄДРПОУ: 44696468<br/>
+                        Р/р: UA333052990000026008000129997<br/>
+                        Банк: ПриватБанк<br/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Призначення платежу
+                    </td>
+                    <td>
+                        Благодійний внесок на статутну <br/> діяльність від ПІБ
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <img class="qr" src="photos/qr.jpg" alt="qr" width="375">
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-item">
+            <div class="main-logo">
+                <img src="photos/logos/logo.svg" alt="лого">
+            </div>
+            <div class="secondary-logo">
+                <a class="image-link" target="_blank" href="https://www.instagram.com/tviy_vchinok?igsh=MWxjc2lxeGxsMG50cQ=="><img
+                        src="photos/logos/instagram-logo.svg" alt="instagram logo"></a>
+                <a class="image-link" target="_blank" href="https://www.facebook.com/share/g/Dtmth4u4qCtCNweD/"><img
+                        src="photos/logos/facebook-logo.svg" alt="facebook logo"></a>
+                <a class="image-link" target="_blank" href="https://www.tiktok.com/@tviy_vchunok?_t=8qjZ2aMMr8I&_r=1"><img
+                        src="photos/logos/tik-tok-logo.svg" alt="tiktok logo"></a>
+                <a class="image-link" target="_blank" href="https://t.me/TvijVchinok"><img
+                        src="photos/logos/telegram.svg" alt="telegram logo"></a>
+            </div>
+        </div>
+        <div class="footer-item">
+            <div class="footer-line">Контакти</div>
+            <div class="footer-line">БО «БФ "Твій Вчинок"»</div>
+            <div class="footer-line">02225, Україна, м. Київ,</div>
+            <div class="footer-line">Вул. Оноре де Бальзака, 12</div>
+            <div class="footer-line">Тел. +38 (067) 421 49 77</div>
+            <div class="footer-line">Email: tviy-vchynok@gmail.com</div>
+        </div>
+        <div class="footer-item">
+            <div class="footer-line">Розділи</div>
+            <div class="footer-line"><a href="#about">Про фонд</a></div>
+            <div class="footer-line"><a href="#activity">Напрямки діяльності</a></div>
+            <div class="footer-line"><a href="#partners">Партнери</a></div>
+            <div class="footer-line"><a href="#">Звітність</a></div>
+        </div>
+    </div>
+    <hr class="footer-hr">
+    <div class="rights">© 2025 by TviyVchynok. All Rights Reserved.</div>
 </div>
 
 </body>
