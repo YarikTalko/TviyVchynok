@@ -1,11 +1,3 @@
-$large: 992px;
-$extraLarge: 1200px;
-$extraExtraLarge: 1920px;
-
-$desktop: 1920px;
-$tablet: 768px;
-$mobile: 430px;
-
 html {
   box-sizing: border-box;
 }
@@ -21,13 +13,9 @@ body {
   --charity-font-size: 24px;
   font-family: e-Ukraine-Regular, sans-serif;
   color: #232B2B;
-
-  //@media only screen and (max-width: $extraExtraLarge) {
-  //  --banner-font-size: 54px;
-  //  --charity-font-size: 20px;
-  //}
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  body {
     --base-padding: 24px;
   }
 }
@@ -43,37 +31,31 @@ hr {
   src: url("/fonts/e-Ukraine/e-Ukraine-Regular.otf");
   font-weight: normal;
 }
-
 @font-face {
   font-family: e-Ukraine-Bold;
   src: url("/fonts/e-Ukraine/e-Ukraine-Bold.otf");
   font-weight: bold;
 }
-
 @font-face {
   font-family: e-Ukraine-Medium;
   src: url("/fonts/e-Ukraine/e-Ukraine-Medium.otf");
   font-weight: 500;
 }
-
 @font-face {
   font-family: e-Ukraine-Light;
   src: url("/fonts/e-Ukraine/e-Ukraine-Light.otf");
   font-weight: 300;
 }
-
 @font-face {
   font-family: e-Ukraine-Head-Regular;
   src: url("/fonts/e-Ukraine Head/e-UkraineHead-Regular.otf");
   font-weight: normal;
 }
-
 @font-face {
   font-family: e-Ukraine-Head-Bold;
   src: url("/fonts/e-Ukraine Head/e-UkraineHead-Bold.otf");
   font-weight: bold;
 }
-
 .header {
   background-color: #232B2B;
   width: 100%;
@@ -86,8 +68,9 @@ hr {
   top: 0;
   position: sticky;
   z-index: 1;
-
-  @media only screen and (max-width: $extraLarge) {
+}
+@media only screen and (max-width: 1200px) {
+  .header {
     height: 90px;
   }
 }
@@ -121,8 +104,9 @@ hr {
 
 .banner {
   width: 100%;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .banner {
     height: 856px;
     object-fit: cover;
     object-position: left;
@@ -145,8 +129,9 @@ hr {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .banner-text {
     justify-content: center;
     gap: 32px;
   }
@@ -157,8 +142,9 @@ hr {
   font-size: var(--banner-font-size);
   line-height: 1.2;
   color: #F9CF01;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .banner-main-title {
     font-size: 36px;
     text-align: center;
   }
@@ -167,8 +153,9 @@ hr {
 .banner-sub-title {
   font-size: 34px;
   width: 560px;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .banner-sub-title {
     width: 506px;
     text-align: center;
     margin: 0 auto;
@@ -186,8 +173,9 @@ hr {
   margin: 120px 0;
   background-color: white;
   text-align: center;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .help-container {
     margin: 100px 0;
     flex-direction: column;
     gap: 48px;
@@ -196,8 +184,9 @@ hr {
 
 .help-hr {
   border-right: 1px solid #C9C9C9;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .help-hr {
     border-right: none;
     border-bottom: 1px solid #C9C9C9;
     width: 85px;
@@ -227,8 +216,9 @@ hr {
   font-size: 34px;
   padding-top: 100px;
   margin: 0;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .main-header {
     text-align: center;
   }
 }
@@ -237,8 +227,9 @@ hr {
   margin: 24px 0;
   font-family: e-Ukraine-Light, sans-serif;
   line-height: 1.8;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .about-text {
     text-align: justify;
     margin: 0 0 24px;
   }
@@ -247,16 +238,18 @@ hr {
 .our-team {
   font-size: 24px;
   margin: 78px 0 48px;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .our-team {
     margin: 50px 0 24px;
   }
 }
 
 .team {
   display: flex;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .team {
     width: 100%;
     gap: 24px;
     flex-direction: column;
@@ -266,8 +259,9 @@ hr {
 .team-member {
   display: flex;
   width: 40%;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .team-member {
     width: 100%;
   }
 }
@@ -278,9 +272,8 @@ hr {
   height: 190px;
 }
 
-.team-member-name-container {
-
-  @media only screen and (max-width: $tablet) {
+@media only screen and (max-width: 768px) {
+  .team-member-name-container {
     width: 100%;
     position: relative;
     display: flex;
@@ -294,8 +287,9 @@ hr {
   margin: auto 47px;
   text-align: center;
   line-height: 1.4;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .team-member-name {
     font-size: 22px;
     margin: 0;
     width: 300px;
@@ -308,8 +302,9 @@ hr {
 
 .activity-item {
   display: flex;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .activity-item {
     flex-direction: column;
   }
 }
@@ -320,37 +315,40 @@ hr {
 
 .activity-item:nth-child(odd) {
   flex-direction: row-reverse;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .activity-item:nth-child(odd) {
     flex-direction: column;
   }
 }
 
 .activity-item:nth-child(odd) .activity-item-photo {
   margin-left: 40px;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .activity-item:nth-child(odd) .activity-item-photo {
     margin-left: 0;
   }
 }
 
 .activity-item:nth-child(even) .activity-item-photo {
   margin-right: 40px;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .activity-item:nth-child(even) .activity-item-photo {
     margin-right: 0;
   }
 }
 
 .activity-item-text {
   margin: auto 0;
-
-  .btn-support {
-    margin-top: 24px;
-
-    @media only screen and (max-width: $tablet) {
-      width: 100%;
-    }
+}
+.activity-item-text .btn-support {
+  margin-top: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .activity-item-text .btn-support {
+    width: 100%;
   }
 }
 
@@ -369,8 +367,9 @@ hr {
   border-radius: 12px;
   width: 525px;
   height: 305px;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .activity-item-photo {
     width: 100%;
     height: auto;
     margin-bottom: 40px;
@@ -435,8 +434,9 @@ hr {
 .footer-container {
   padding-top: 30px;
   display: flex;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .footer-container {
     padding-top: 32px;
     flex-direction: column;
     gap: 48px;
@@ -455,8 +455,9 @@ hr {
 .footer-item {
   color: #ffffff;
   margin-right: 100px;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .footer-item {
     margin: 0;
   }
 }
@@ -473,7 +474,6 @@ hr {
 
 .footer-line {
   padding-bottom: 16px;
-
   font-family: e-Ukraine-Light, sans-serif;
 }
 
@@ -503,3 +503,5 @@ hr {
 .footer-line-first {
   font-family: e-Ukraine-Medium, sans-serif;
 }
+
+/*# sourceMappingURL=style.css.map */

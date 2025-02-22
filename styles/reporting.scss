@@ -1,0 +1,25 @@
+.report {
+  padding: 0 var(--base-padding);
+}
+
+.report-container {
+  padding: 0 30px;
+}
+
+.sub-header {
+  font-family: e-Ukraine-Bold, sans-serif;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.documents {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 100px;
+
+  img {
+    width: 240px;
+    height: 339px;
+    border-radius: 30px;
+  }
+}
