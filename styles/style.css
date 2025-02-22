@@ -272,21 +272,19 @@ hr {
   height: 190px;
 }
 
-@media only screen and (max-width: 768px) {
-  .team-member-name-container {
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.team-member-name-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-member-name {
   font-family: e-Ukraine-Light, sans-serif;
-  margin: auto 47px;
+  margin: auto;
   text-align: center;
   line-height: 1.4;
+  width: 230px;
 }
 @media only screen and (max-width: 768px) {
   .team-member-name {
