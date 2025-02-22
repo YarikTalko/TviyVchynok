@@ -1,0 +1,65 @@
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  grid-gap: 1em;
+  overflow: hidden;
+  width: 100%;
+}
+.wrapper > .carousel {
+  display: flex;
+  grid-gap: 13px;
+  transition: all 1s ease-in-out;
+}
+
+.carousel-item {
+  border: 1px solid #C9C9C9;
+  border-radius: 10px;
+  width: 187.5px;
+  height: 112.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item > img {
+  border-radius: inherit;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.carousel-map {
+  margin-top: 1em;
+  text-align: center;
+}
+.carousel-map > button {
+  all: unset;
+  background: rgb(226.5, 226.5, 226.5);
+  cursor: pointer;
+  margin: 0 0.125em;
+  position: relative;
+  user-select: none;
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+}
+.carousel-map > button.active:after {
+  background: #232B2B;
+  content: "";
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+}
+
+/*# sourceMappingURL=carousel.css.map */
