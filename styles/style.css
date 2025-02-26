@@ -18,6 +18,11 @@ body {
     --base-padding: 24px;
   }
 }
+@media only screen and (max-width: 430px) {
+  body {
+    --base-padding: 32px;
+  }
+}
 
 hr {
   border-top: 1px solid #C9C9C9;
@@ -112,6 +117,12 @@ hr {
     overflow-x: hidden;
   }
 }
+@media only screen and (max-width: 430px) {
+  .banner {
+    width: 430px;
+    height: 772px;
+  }
+}
 
 .banner-container {
   position: relative;
@@ -148,6 +159,12 @@ hr {
     text-align: center;
   }
 }
+@media only screen and (max-width: 430px) {
+  .banner-main-title {
+    text-align: center;
+    font-size: 32px;
+  }
+}
 
 .banner-sub-title {
   font-size: 34px;
@@ -157,6 +174,14 @@ hr {
   .banner-sub-title {
     width: 506px;
     text-align: center;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .banner-sub-title {
+    width: 360px;
+    text-align: center;
+    font-size: 30px;
     margin: 0 auto;
   }
 }
@@ -209,6 +234,11 @@ hr {
   padding: 0 var(--base-padding) 120px;
   background-color: #F2F2EF;
 }
+@media only screen and (max-width: 768px) {
+  .about-container {
+    padding-bottom: 32px;
+  }
+}
 
 .main-header {
   font-family: e-Ukraine-Bold, sans-serif;
@@ -219,6 +249,12 @@ hr {
 @media only screen and (max-width: 768px) {
   .main-header {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-header-small {
+    padding-top: 32px;
   }
 }
 
@@ -290,6 +326,12 @@ hr {
     font-size: 22px;
     margin: 0;
     width: 300px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .team-member-name {
+    width: auto;
+    font-size: 19px;
   }
 }
 
@@ -368,7 +410,8 @@ hr {
 @media only screen and (max-width: 768px) {
   .activity-item-photo {
     width: 100%;
-    height: auto;
+    height: 380px;
+    object-fit: cover;
     margin-bottom: 40px;
   }
 }
@@ -376,6 +419,11 @@ hr {
 .partners-container {
   padding: 0 var(--base-padding) 100px;
   background-color: #F2F2EF;
+}
+@media only screen and (max-width: 768px) {
+  .partners-container {
+    padding-bottom: 32px;
+  }
 }
 
 .fund-help-container {
@@ -441,6 +489,7 @@ hr {
 @media only screen and (max-width: 768px) {
   .charity-row {
     flex-direction: column;
+    gap: 24px;
   }
 }
 
@@ -462,6 +511,11 @@ hr {
     font-family: e-Ukraine-Regular, sans-serif;
     font-size: 20px;
     max-width: 100%;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .sub-td {
+    font-size: 16px;
   }
 }
 
@@ -501,6 +555,11 @@ hr {
 
 .qr-container-top-title {
   font-family: e-Ukraine-Light, sans-serif;
+}
+@media only screen and (max-width: 430px) {
+  .qr-container-top-title {
+    text-align: center;
+  }
 }
 
 .qr-container-main-title {

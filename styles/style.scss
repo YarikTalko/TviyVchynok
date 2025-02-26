@@ -1,10 +1,8 @@
-$large: 992px;
 $extraLarge: 1200px;
-$extraExtraLarge: 1920px;
 
 $desktop: 1920px;
 $tablet: 768px;
-$mobile: 430px;
+$mobileLarge: 430px;
 
 html {
   box-sizing: border-box;
@@ -23,6 +21,10 @@ body {
 
   @media only screen and (max-width: $tablet) {
     --base-padding: 24px;
+  }
+
+  @media only screen and (max-width: $mobileLarge) {
+    --base-padding: 32px;
   }
 }
 
@@ -122,6 +124,11 @@ hr {
     object-position: left;
     overflow-x: hidden;
   }
+
+  @media only screen and (max-width: $mobileLarge) {
+    width: 430px;
+    height: 772px;
+  }
 }
 
 .banner-container {
@@ -156,6 +163,11 @@ hr {
     font-size: 36px;
     text-align: center;
   }
+
+  @media only screen and (max-width: $mobileLarge) {
+    text-align: center;
+    font-size: 32px;
+  }
 }
 
 .banner-sub-title {
@@ -165,6 +177,13 @@ hr {
   @media only screen and (max-width: $tablet) {
     width: 506px;
     text-align: center;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: $mobileLarge) {
+    width: 360px;
+    text-align: center;
+    font-size: 30px;
     margin: 0 auto;
   }
 }
@@ -214,6 +233,10 @@ hr {
 .about-container {
   padding: 0 var(--base-padding) 120px;
   background-color: #F2F2EF;
+
+  @media only screen and (max-width: $tablet) {
+    padding-bottom: 32px;
+  }
 }
 
 .main-header {
@@ -224,6 +247,13 @@ hr {
 
   @media only screen and (max-width: $tablet) {
     text-align: center;
+  }
+}
+
+.main-header-small {
+
+  @media only screen and (max-width: $tablet) {
+    padding-top: 32px;
   }
 }
 
@@ -290,6 +320,11 @@ hr {
     font-size: 22px;
     margin: 0;
     width: 300px;
+  }
+
+  @media only screen and (max-width: $mobileLarge) {
+    width: auto;
+    font-size: 19px;
   }
 }
 
@@ -363,7 +398,8 @@ hr {
 
   @media only screen and (max-width: $tablet) {
     width: 100%;
-    height: auto;
+    height: 380px;
+    object-fit: cover;
     margin-bottom: 40px;
   }
 }
@@ -371,6 +407,10 @@ hr {
 .partners-container {
   padding: 0 var(--base-padding) 100px;
   background-color: #F2F2EF;
+
+  @media only screen and (max-width: $tablet) {
+    padding-bottom: 32px;
+  }
 }
 
 .fund-help-container {
@@ -432,6 +472,7 @@ hr {
 
   @media only screen and (max-width: $tablet) {
     flex-direction: column;
+    gap: 24px;
   }
 }
 
@@ -451,6 +492,10 @@ hr {
     font-family: e-Ukraine-Regular, sans-serif;
     font-size: 20px;
     max-width: 100%;
+  }
+
+  @media only screen and (max-width: $mobileLarge) {
+    font-size: 16px;
   }
 }
 
@@ -490,6 +535,10 @@ hr {
 
 .qr-container-top-title {
   font-family: e-Ukraine-Light, sans-serif;
+
+  @media only screen and (max-width: $mobileLarge) {
+    text-align: center;
+  }
 }
 
 .qr-container-main-title {
