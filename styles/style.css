@@ -390,11 +390,14 @@ hr {
   border-radius: 23px;
   display: flex;
   justify-content: space-around;
-  padding: 18px 10px;
+  padding: 32px;
+}
+
+.charity-sub-container {
+  padding: 64px;
 }
 
 .charity-header {
-  padding-top: 83px;
   font-family: e-Ukraine-Medium, sans-serif;
   font-size: 28px;
 }
@@ -409,8 +412,49 @@ hr {
   vertical-align: top;
 }
 
-.qr {
-  border-radius: 23px;
+.qr-container {
+  background-color: hsla(227, 100%, 58%, 0.1);
+  padding: 32px;
+  border-radius: 12px;
+}
+
+.qr-container-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.qr-container-top-title {
+  font-family: e-Ukraine-Light, sans-serif;
+}
+
+.qr-container-main-title {
+  font-family: e-Ukraine-Medium, sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.qr-code {
+  width: 214px;
+  height: 214px;
+  margin: 48px auto;
+}
+
+.instruction-container {
+  padding: 0 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.instruction-container-item {
+  display: flex;
+  align-items: center;
+}
+
+.instruction-container-number {
+  width: 32px;
+  height: 32px;
 }
 
 .footer {
