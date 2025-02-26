@@ -18,14 +18,8 @@ body {
   margin: 0;
   --base-padding: 160px;
   --banner-font-size: 64px;
-  --charity-font-size: 24px;
   font-family: e-Ukraine-Regular, sans-serif;
   color: #232B2B;
-
-  //@media only screen and (max-width: $extraExtraLarge) {
-  //  --banner-font-size: 54px;
-  //  --charity-font-size: 20px;
-  //}
 
   @media only screen and (max-width: $tablet) {
     --base-padding: 24px;
@@ -389,17 +383,37 @@ hr {
   background-color: #F2F2EF;
   border-radius: 23px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 32px;
+
+  @media only screen and (max-width: $tablet) {
+    flex-direction: column;
+    background-color: transparent;
+    padding: 0;
+    gap: 24px;
+  }
 }
 
 .charity-sub-container {
   padding: 64px;
+  font-size: 16px;
+  width: 55%;
+
+  @media only screen and (max-width: $tablet) {
+    padding: 32px;
+    width: 100%;
+    background-color: #F2F2EF;
+    border-radius: 12px;
+  }
 }
 
 .charity-header {
   font-family: e-Ukraine-Medium, sans-serif;
   font-size: 28px;
+
+  @media only screen and (max-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .charity-table {
@@ -407,21 +421,65 @@ hr {
   line-height: 1.4;
 }
 
+.charity-row {
+  display: flex;
+
+  @media only screen and (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
 .main-td {
-  width: 30%;
-  vertical-align: top;
+  font-family: e-Ukraine-Light, sans-serif;
+  max-width: 35%;
+
+  @media only screen and (max-width: $tablet) {
+    max-width: 100%;
+    margin: 48px 0 24px;
+  }
+}
+
+.sub-td {
+
+  @media only screen and (max-width: $tablet) {
+    font-family: e-Ukraine-Regular, sans-serif;
+    font-size: 20px;
+    max-width: 100%;
+  }
 }
 
 .qr-container {
   background-color: hsl(227, 100%, 58%, 10%);
-  padding: 32px;
   border-radius: 12px;
+  padding: 32px;
+  max-width: 45%;
+
+  @media only screen and (max-width: $tablet) {
+    max-width: 100%;
+  }
 }
 
 .qr-container-top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 48px;
+  font-size: 15px;
+  gap: 25px;
+
+  @media only screen and (max-width: $tablet) {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    img {
+      width: 208px;
+      height: 35px;
+    }
+
+    .qr-container-top-title {
+      font-size: 16px;
+    }
+  }
 }
 
 .qr-container-top-title {
@@ -441,15 +499,21 @@ hr {
 }
 
 .instruction-container {
-  padding: 0 75px;
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
   gap: 17px;
+
+  @media only screen and (max-width: $tablet) {
+    gap: 16px;
+    padding: 0;
+  }
 }
 
 .instruction-container-item {
   display: flex;
   align-items: center;
+  gap: 16px;
 }
 
 .instruction-container-number {
