@@ -404,6 +404,8 @@ hr {
   padding: 64px;
   font-size: 16px;
   width: 55%;
+  display: flex;
+  flex-direction: column;
 }
 @media only screen and (max-width: 768px) {
   .charity-sub-container {
@@ -411,6 +413,7 @@ hr {
     width: 100%;
     background-color: #F2F2EF;
     border-radius: 12px;
+    gap: 48px;
   }
 }
 
@@ -427,6 +430,9 @@ hr {
 .charity-table {
   font-size: var(--charity-font-size);
   line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .charity-row {
@@ -445,10 +451,12 @@ hr {
 @media only screen and (max-width: 768px) {
   .main-td {
     max-width: 100%;
-    margin: 48px 0 24px;
   }
 }
 
+.sub-td {
+  max-width: 65%;
+}
 @media only screen and (max-width: 768px) {
   .sub-td {
     font-family: e-Ukraine-Regular, sans-serif;
