@@ -18,7 +18,7 @@ body {
     --base-padding: 24px;
   }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 426px) {
   body {
     --base-padding: 32px;
   }
@@ -71,12 +71,6 @@ hr {
     overflow-x: hidden;
   }
 }
-@media only screen and (max-width: 430px) {
-  .banner {
-    width: 430px;
-    height: 772px;
-  }
-}
 
 .banner-container {
   position: relative;
@@ -113,9 +107,8 @@ hr {
     text-align: center;
   }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 426px) {
   .banner-main-title {
-    text-align: center;
     font-size: 32px;
   }
 }
@@ -126,17 +119,14 @@ hr {
 }
 @media only screen and (max-width: 768px) {
   .banner-sub-title {
-    width: 506px;
+    width: 65%;
     text-align: center;
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 426px) {
   .banner-sub-title {
-    width: 360px;
-    text-align: center;
     font-size: 30px;
-    margin: 0 auto;
   }
 }
 
@@ -236,11 +226,11 @@ hr {
 
 .team {
   display: flex;
+  gap: 24px;
 }
 @media only screen and (max-width: 768px) {
   .team {
     width: 100%;
-    gap: 24px;
     flex-direction: column;
   }
 }
@@ -260,12 +250,22 @@ hr {
   width: 175px;
   height: 190px;
 }
+@media only screen and (max-width: 426px) {
+  .team-member-photo {
+    width: 40%;
+    height: auto;
+  }
+}
 
 .team-member-name-container {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 426px) {
+  .team-member-name-container {
+    width: 60%;
+  }
 }
 
 .team-member-name {
@@ -279,13 +279,12 @@ hr {
   .team-member-name {
     font-size: 22px;
     margin: 0;
-    width: 300px;
   }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 426px) {
   .team-member-name {
-    width: auto;
-    font-size: 19px;
+    width: 100%;
+    font-size: 12px;
   }
 }
 
@@ -459,6 +458,8 @@ hr {
 
 .sub-td {
   max-width: 65%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 @media only screen and (max-width: 768px) {
   .sub-td {
@@ -467,7 +468,7 @@ hr {
     max-width: 100%;
   }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 426px) {
   .sub-td {
     font-size: 16px;
   }
@@ -510,7 +511,7 @@ hr {
 .qr-container-top-title {
   font-family: e-Ukraine-Light, sans-serif;
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 426px) {
   .qr-container-top-title {
     text-align: center;
   }
@@ -555,6 +556,7 @@ hr {
 .footer {
   background-color: #232B2B;
   padding: 0 var(--base-padding);
+  width: 100%;
 }
 
 .font-24 {
