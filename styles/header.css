@@ -95,6 +95,11 @@
   text-decoration: none;
   font-size: 16px;
 }
+@media only screen and (max-width: 1024px) {
+  .header-center a {
+    font-size: 12px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .header-center a {
     padding: 16px calc(var(--base-padding) + 10px);
@@ -105,18 +110,14 @@
 .logo-container {
   flex: 1;
   display: flex;
-  align-items: flex-start;
-  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .logo-container {
     align-items: center;
     width: auto;
   }
-}
-
-.logo {
-  padding: 16px 0;
 }
 
 .logo-href {
@@ -143,6 +144,11 @@
   border-radius: 4px;
   border: none;
   font-family: e-Ukraine-Regular, sans-serif;
+}
+@media only screen and (max-width: 1024px) {
+  .btn-support {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .btn-support {

@@ -13,6 +13,12 @@ body {
   font-family: e-Ukraine-Regular, sans-serif;
   color: #232B2B;
 }
+@media only screen and (max-width: 1024px) {
+  body {
+    --base-padding: 102px;
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 768px) {
   body {
     --base-padding: 24px;
@@ -101,6 +107,11 @@ hr {
   line-height: 1.2;
   color: #F9CF01;
 }
+@media only screen and (max-width: 1024px) {
+  .banner-main-title {
+    font-size: 40px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .banner-main-title {
     font-size: 36px;
@@ -116,6 +127,12 @@ hr {
 .banner-sub-title {
   font-size: 34px;
   width: 560px;
+}
+@media only screen and (max-width: 1024px) {
+  .banner-sub-title {
+    font-size: 20px;
+    width: 375px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .banner-sub-title {
@@ -168,10 +185,20 @@ hr {
   font-size: 48px;
   margin: 0 0 32px 0;
 }
+@media only screen and (max-width: 1024px) {
+  .help-title {
+    font-size: 30px;
+  }
+}
 
 .help-sub-title {
   font-size: 20px;
   color: #232B2B;
+}
+@media only screen and (max-width: 1024px) {
+  .help-sub-title {
+    font-size: 14px;
+  }
 }
 
 .about-container {
@@ -189,6 +216,11 @@ hr {
   font-size: 34px;
   padding-top: 100px;
   margin: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .main-header {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .main-header {
@@ -218,6 +250,11 @@ hr {
   font-size: 24px;
   margin: 78px 0 48px;
 }
+@media only screen and (max-width: 1024px) {
+  .our-team {
+    font-size: 20px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .our-team {
     margin: 50px 0 24px;
@@ -237,7 +274,7 @@ hr {
 
 .team-member {
   display: flex;
-  width: 40%;
+  width: 50%;
 }
 @media only screen and (max-width: 768px) {
   .team-member {
@@ -249,6 +286,12 @@ hr {
   border-radius: 70px;
   width: 175px;
   height: 190px;
+}
+@media only screen and (max-width: 1024px) {
+  .team-member-photo {
+    width: 30%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 426px) {
   .team-member-photo {
@@ -262,9 +305,9 @@ hr {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 1024px) {
   .team-member-name-container {
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -274,6 +317,11 @@ hr {
   text-align: center;
   line-height: 1.4;
   width: 230px;
+}
+@media only screen and (max-width: 1024px) {
+  .team-member-name {
+    font-size: 10px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .team-member-name {
@@ -317,6 +365,11 @@ hr {
 .activity-item:nth-child(odd) .activity-item-photo {
   margin-left: 40px;
 }
+@media only screen and (max-width: 1024px) {
+  .activity-item:nth-child(odd) .activity-item-photo {
+    margin-left: 20px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .activity-item:nth-child(odd) .activity-item-photo {
     margin-left: 0;
@@ -325,6 +378,11 @@ hr {
 
 .activity-item:nth-child(even) .activity-item-photo {
   margin-right: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .activity-item:nth-child(even) .activity-item-photo {
+    margin-right: 20px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .activity-item:nth-child(even) .activity-item-photo {
@@ -349,16 +407,38 @@ hr {
   font-size: 26px;
   margin-bottom: 24px;
 }
+@media only screen and (max-width: 1024px) {
+  .activity-item-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
 
 .activity-item-subtitle {
   font-family: e-Ukraine-Light, sans-serif;
   line-height: 1.8;
+}
+@media only screen and (max-width: 1024px) {
+  .activity-item-subtitle {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .activity-item-subtitle {
+    font-size: 16px;
+  }
 }
 
 .activity-item-photo {
   border-radius: 12px;
   width: 525px;
   height: 305px;
+}
+@media only screen and (max-width: 1024px) {
+  .activity-item-photo {
+    width: 40%;
+    height: 40%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .activity-item-photo {
@@ -408,6 +488,11 @@ hr {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: 1024px) {
+  .charity-sub-container {
+    padding: 48px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .charity-sub-container {
     padding: 32px;
@@ -438,6 +523,7 @@ hr {
 
 .charity-row {
   display: flex;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 768px) {
   .charity-row {
@@ -448,16 +534,18 @@ hr {
 
 .main-td {
   font-family: e-Ukraine-Light, sans-serif;
-  max-width: 35%;
+  width: 30%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 @media only screen and (max-width: 768px) {
   .main-td {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
 .sub-td {
-  max-width: 65%;
+  width: 60%;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -465,7 +553,7 @@ hr {
   .sub-td {
     font-family: e-Ukraine-Regular, sans-serif;
     font-size: 20px;
-    max-width: 100%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 426px) {
@@ -492,6 +580,14 @@ hr {
   margin-bottom: 48px;
   font-size: 15px;
   gap: 25px;
+}
+@media only screen and (max-width: 1024px) {
+  .qr-container-top {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 768px) {
   .qr-container-top {

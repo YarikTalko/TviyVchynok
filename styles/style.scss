@@ -1,8 +1,10 @@
-$extraLarge: 1200px;
-
-$desktop: 1920px;
+$fourthKey: 2560px;
+$laptopLarge: 1440px;
+$laptop: 1024px;
 $tablet: 768px;
 $mobileLarge: 426px;
+$mobileMedium: 376px;
+$mobileSmall: 320px;
 
 html {
   box-sizing: border-box;
@@ -18,6 +20,11 @@ body {
   --banner-font-size: 64px;
   font-family: e-Ukraine-Regular, sans-serif;
   color: #232B2B;
+
+  @media only screen and (max-width: $laptop) {
+    --base-padding: 102px;
+    font-size: 14px;
+  }
 
   @media only screen and (max-width: $tablet) {
     --base-padding: 24px;
@@ -110,6 +117,10 @@ hr {
   line-height: 1.2;
   color: #F9CF01;
 
+  @media only screen and (max-width: $laptop) {
+    font-size: 40px;
+  }
+
   @media only screen and (max-width: $tablet) {
     font-size: 36px;
     text-align: center;
@@ -123,6 +134,11 @@ hr {
 .banner-sub-title {
   font-size: 34px;
   width: 560px;
+
+  @media only screen and (max-width: $laptop) {
+    font-size: 20px;
+    width: 375px;
+  }
 
   @media only screen and (max-width: $tablet) {
     width: 65%;
@@ -170,11 +186,19 @@ hr {
   color: #2B59FF;
   font-size: 48px;
   margin: 0 0 32px 0;
+
+  @media only screen and (max-width: $laptop) {
+    font-size: 30px;
+  }
 }
 
 .help-sub-title {
   font-size: 20px;
   color: #232B2B;
+
+  @media only screen and (max-width: $laptop) {
+    font-size: 14px;
+  }
 }
 
 .about-container {
@@ -191,6 +215,10 @@ hr {
   font-size: 34px;
   padding-top: 100px;
   margin: 0;
+
+  @media only screen and (max-width: $laptop) {
+    font-size: 30px;
+  }
 
   @media only screen and (max-width: $tablet) {
     text-align: center;
@@ -219,6 +247,10 @@ hr {
   font-size: 24px;
   margin: 78px 0 48px;
 
+  @media only screen and (max-width: $laptop) {
+    font-size: 20px;
+  }
+
   @media only screen and (max-width: $tablet) {
     margin: 50px 0 24px;
   }
@@ -236,7 +268,7 @@ hr {
 
 .team-member {
   display: flex;
-  width: 40%;
+  width: 50%;
 
   @media only screen and (max-width: $tablet) {
     width: 100%;
@@ -247,6 +279,11 @@ hr {
   border-radius: 70px;
   width: 175px;
   height: 190px;
+
+  @media only screen and (max-width: $laptop) {
+    width: 30%;
+    height: auto;
+  }
 
   @media only screen and (max-width: $mobileLarge) {
     width: 40%;
@@ -259,8 +296,8 @@ hr {
   align-items: center;
   justify-content: center;
 
-  @media only screen and (max-width: $mobileLarge) {
-    width: 60%;
+  @media only screen and (max-width: $laptop) {
+    width: 70%;
   }
 }
 
@@ -271,12 +308,16 @@ hr {
   line-height: 1.4;
   width: 230px;
 
+  @media only screen and (max-width: $laptop) {
+    font-size: 10px;
+  }
+
   @media only screen and (max-width: $tablet) {
     font-size: 22px;
     margin: 0;
   }
 
-  @media only screen and (max-width: calc($mobileLarge)) {
+  @media only screen and (max-width: $mobileLarge) {
     width: 100%;
     font-size: 12px;
   }
@@ -309,6 +350,10 @@ hr {
 .activity-item:nth-child(odd) .activity-item-photo {
   margin-left: 40px;
 
+  @media only screen and (max-width: $laptop) {
+    margin-left: 20px;
+  }
+
   @media only screen and (max-width: $tablet) {
     margin-left: 0;
   }
@@ -316,6 +361,10 @@ hr {
 
 .activity-item:nth-child(even) .activity-item-photo {
   margin-right: 40px;
+
+  @media only screen and (max-width: $laptop) {
+    margin-right: 20px;
+  }
 
   @media only screen and (max-width: $tablet) {
     margin-right: 0;
@@ -338,17 +387,36 @@ hr {
   font-family: e-Ukraine-Medium, sans-serif;
   font-size: 26px;
   margin-bottom: 24px;
+
+  @media only screen and (max-width: $laptop) {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
 }
 
 .activity-item-subtitle {
   font-family: e-Ukraine-Light, sans-serif;
   line-height: 1.8;
+
+  @media only screen and (max-width: $laptop) {
+    font-size: 12px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 16px;
+  }
 }
 
 .activity-item-photo {
   border-radius: 12px;
   width: 525px;
   height: 305px;
+
+  @media only screen and (max-width: $laptop) {
+    width: 40%;
+    height: 40%;
+
+  }
 
   @media only screen and (max-width: $tablet) {
     width: 100%;
@@ -395,6 +463,10 @@ hr {
   display: flex;
   flex-direction: column;
 
+  @media only screen and (max-width: $laptop) {
+    padding: 48px;
+  }
+
   @media only screen and (max-width: $tablet) {
     padding: 32px;
     width: 100%;
@@ -423,6 +495,7 @@ hr {
 
 .charity-row {
   display: flex;
+  justify-content: space-between;
 
   @media only screen and (max-width: $tablet) {
     flex-direction: column;
@@ -432,22 +505,24 @@ hr {
 
 .main-td {
   font-family: e-Ukraine-Light, sans-serif;
-  max-width: 35%;
+  width: 30%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 
   @media only screen and (max-width: $tablet) {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
 .sub-td {
-  max-width: 65%;
+  width: 60%;
   word-wrap: break-word;
   overflow-wrap: break-word;
 
   @media only screen and (max-width: $tablet) {
     font-family: e-Ukraine-Regular, sans-serif;
     font-size: 20px;
-    max-width: 100%;
+    width: 100%;
   }
 
   @media only screen and (max-width: $mobileLarge) {
@@ -472,6 +547,13 @@ hr {
   margin-bottom: 48px;
   font-size: 15px;
   gap: 25px;
+
+  @media only screen and (max-width: $laptop) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
   @media only screen and (max-width: $tablet) {
     flex-direction: column;

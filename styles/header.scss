@@ -1,4 +1,5 @@
-$desktop: 1920px;
+$laptopLarge: 1920px;
+$laptop: 1024px;
 $tablet: 768px;
 $mobileLarge: 430px;
 
@@ -94,6 +95,10 @@ $mobileLarge: 430px;
   text-decoration: none;
   font-size: 16px;
 
+  @media only screen and (max-width: $laptop) {
+    font-size: 12px;
+  }
+
   @media only screen and (max-width: $tablet) {
     padding: 16px calc(var(--base-padding) + 10px);
     display: block;
@@ -103,8 +108,8 @@ $mobileLarge: 430px;
 .logo-container {
   flex: 1;
   display: flex;
-  align-items: flex-start;
-  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
 
   @media (max-width: $tablet) {
     align-items: center;
@@ -113,7 +118,6 @@ $mobileLarge: 430px;
 }
 
 .logo {
-  padding: 16px 0;
 }
 
 .logo-href {
@@ -139,6 +143,10 @@ $mobileLarge: 430px;
   border-radius: 4px;
   border: none;
   font-family: e-Ukraine-Regular, sans-serif;
+
+  @media only screen and (max-width: $laptop) {
+    font-size: 12px;
+  }
 
   @media only screen and (max-width: $tablet) {
     width: 100%;
