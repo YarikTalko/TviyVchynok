@@ -120,4 +120,13 @@ hr {
   }
 }
 
+#about, #activity, #partners, #reporting {
+  scroll-margin-top: 113px;
+}
+@media only screen and (max-width: 768px) {
+  #about, #activity, #partners, #reporting {
+    scroll-margin-top: 167px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
