@@ -141,13 +141,6 @@ body {
   }
 }
 
-@media (max-width: 1440px) {
-  .sh-logo {
-    transform: scale(0.8);
-    transform-origin: left;
-  }
-}
-
 .sh-logo-href {
   line-height: 0;
   display: flex;

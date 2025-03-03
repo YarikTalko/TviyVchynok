@@ -21,33 +21,28 @@
   display: flex;
   gap: 50px;
   margin-bottom: 100px;
+  overflow-x: auto;
 }
 @media screen and (max-width: 1440px) {
   .documents {
     gap: 5%;
   }
 }
-@media screen and (max-width: 768px) {
-  .documents {
-    flex-direction: column;
-    gap: 20px;
-  }
+
+.documents::-webkit-scrollbar {
+  display: none;
 }
-.documents img {
+
+.document_image {
   width: 240px;
   height: 339px;
-  border-radius: 30px;
+  padding: 10px;
+  border: 1px solid #C9C9C9;
+  border-radius: 12px;
 }
-@media only screen and (max-width: 1440px) {
-  .documents img {
-    width: 20%;
-    height: auto;
-  }
-}
-@media screen and (max-width: 768px) {
-  .documents img {
-    width: 100%;
-  }
+
+.main-header-reporting {
+  padding: 70px 0;
 }
 
 /*# sourceMappingURL=reporting.css.map */

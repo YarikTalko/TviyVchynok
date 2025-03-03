@@ -28,28 +28,25 @@ $mobileSmall: 320px;
   display: flex;
   gap: 50px;
   margin-bottom: 100px;
+  overflow-x: auto;
   
   @media screen and (max-width: $laptopLarge) {
     gap: 5%;
   }
+}
 
-  @media screen and (max-width: $tablet) {
-    flex-direction: column;
-    gap: 20px;
-  }
+.documents::-webkit-scrollbar {
+  display: none;
+}
 
-  img {
-    width: 240px;
-    height: 339px;
-    border-radius: 30px;
+.document_image {
+  width: 240px;
+  height: 339px;
+  padding: 10px;
+  border: 1px solid #C9C9C9;
+  border-radius: 12px;
+}
 
-    @media only screen and (max-width: $laptopLarge) {
-      width: 20%;
-      height: auto;
-    }
-
-    @media screen and (max-width: $tablet) {
-      width: 100%;
-    }
-  }
+.main-header-reporting {
+  padding: 70px 0;
 }
