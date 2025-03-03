@@ -21,6 +21,10 @@ body {
   font-family: e-Ukraine-Regular, sans-serif;
   color: #232B2B;
 
+  @media only screen and (max-width: $laptopLarge) {
+    --base-padding: 120px;
+  }
+
   @media only screen and (max-width: $laptop) {
     --base-padding: 102px;
     font-size: 14px;

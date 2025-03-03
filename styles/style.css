@@ -13,6 +13,11 @@ body {
   font-family: e-Ukraine-Regular, sans-serif;
   color: #232B2B;
 }
+@media only screen and (max-width: 1440px) {
+  body {
+    --base-padding: 120px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   body {
     --base-padding: 102px;

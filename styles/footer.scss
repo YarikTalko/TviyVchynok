@@ -10,6 +10,10 @@ $mobileSmall: 320px;
   background-color: #232B2B;
   padding: 0 var(--base-padding);
   width: 100%;
+
+  @media (max-width: $laptop) {
+    font-size: 11px;
+  }
 }
 
 .font-24 {
@@ -21,11 +25,16 @@ $mobileSmall: 320px;
   font-size: 12px;
   padding-bottom: 32px;
   text-align: center;
+
+  @media (max-width: $laptop) {
+    font-size: 8px;
+  }
 }
 
 .footer-container {
   padding-top: 30px;
   display: flex;
+  justify-content: space-evenly;
 
   @media only screen and (max-width: $tablet) {
     padding-top: 32px;
@@ -45,7 +54,6 @@ $mobileSmall: 320px;
 
 .footer-item {
   color: #ffffff;
-  margin-right: 100px;
 
   @media only screen and (max-width: $tablet) {
     margin: 0;
@@ -87,8 +95,19 @@ $mobileSmall: 320px;
   border-color: #858585;
 }
 
+.secondary-logo {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
 .image-link img {
   vertical-align: middle;
+  
+  @media only screen {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .footer-line-first {

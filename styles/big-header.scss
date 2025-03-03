@@ -3,9 +3,6 @@ $intermediateResolution: 1920px;
 $laptopLarge: 1440px;
 $laptop: 1024px;
 $tablet: 768px;
-$mobileLarge: 426px;
-$mobileMedium: 376px;
-$mobileSmall: 320px;
 
 body {
   --header-button-font: 16px;
@@ -16,6 +13,10 @@ body {
 
   @media only screen and (max-width: $laptopLarge) and (min-width: $laptop) {
     --header-button-font: 12px;
+  }
+
+  @media only screen and (max-width: $laptop) and (min-width: $tablet) {
+    --header-button-font: 11px;
   }
 }
 
@@ -38,7 +39,6 @@ body {
 }
 
 .bh-header-center {
-  flex: auto;
   display: flex;
   justify-content: center;
   gap: 32px;
@@ -53,36 +53,37 @@ body {
 }
 
 .bh-logo-container {
-  flex: 1;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   height: 100%;
 
-  @media (max-width: $tablet) {
-    align-items: center;
-    width: auto;
+  @media only screen and (max-width: $laptop) {
+    //transform: scale(0.8);
   }
 }
 
 .bh-logo {
 
-  @media (max-width: $laptopLarge) {
-    transform: scale(0.8);
-    transform-origin: left;
-  }
+  width: 100%;
+  height: auto;
+
+  //@media (max-width: $laptopLarge) {
+  //  transform: scale(0.8);
+  //  transform-origin: left;
+  //}
+  //
+  //@media (max-width: $laptop) {
+  //  transform: scale(0.6);
+  //}
 }
 
 .bh-logo-href {
   line-height: 0;
   display: flex;
-  justify-content: flex-start;
 }
 
 .bh-btn-support-container {
-  flex: 1;
   display: flex;
-  justify-content: flex-end;
 }
 
 .bh-btn-support {
@@ -93,6 +94,11 @@ body {
   border-radius: 4px;
   border: none;
   font-family: e-Ukraine-Regular, sans-serif;
+
+  @media only screen and (max-width: $laptop) {
+    padding: 8px 12px;
+    margin-left: 18px;
+  }
 }
 
 .showMenu {
