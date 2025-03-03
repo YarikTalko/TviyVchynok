@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/small-header.css">
+    <link rel="stylesheet" href="styles/big-header.css">
     <link rel="icon" type="image/svg" href="images/favicon.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/swiper.css">
+    <link rel="stylesheet" href="styles/activity.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/help.css">
+    <link rel="stylesheet" href="styles/fund-help.css">
+    <link rel="stylesheet" href="styles/partners.css">
     <title>Твій вчинок</title>
     <script src="scripts/index.js" defer></script>
     <script src="scripts/dropdown.js"></script>
@@ -15,27 +23,44 @@
 </head>
 <body>
 
-<div class="header">
+<div class="big-header">
+    <div class="bh-logo-container">
+        <a class="bh-logo-href" href="index.html">
+            <img class="bh-logo" src="images/logos/logo.svg" alt="logo">
+        </a>
+    </div>
+    <div class="bh-header-center">
+        <a href="#about">ПРО ФОНД</a>
+        <a href="#activity">НАПРЯМКИ ДІЯЛЬНОСТІ</a>
+        <a href="#partners">ПАРТНЕРИ</a>
+        <a href="other-pages/reporting.html#reporting">ЗВІТНІСТЬ</a>
+    </div>
+    <div class="bh-btn-support-container">
+        <button class="bh-btn-support">ПІДТРИМАТИ</button>
+    </div>
+</div>
+
+<div class="small-header">
     <div class="header-lower">
         <div class="hamburger-menu">
             <button onclick="dropdownMenu()" class="hamburger-menu-button" type="button">
                 <img src="images/hamburger_menu.svg" alt="hamburger menu" id="hamburger-menu-button-id">
             </button>
         </div>
-        <div class="logo-container">
-            <a class="logo-href" href="index.html">
-                <img class="logo" src="images/logos/logo.svg" alt="logo">
+        <div class="sh-logo-container">
+            <a class="sh-logo-href" href="index.html">
+                <img class="sh-logo" src="images/logos/logo.svg" alt="logo">
             </a>
         </div>
         <div id="header-dropdown-container-id" class="header-dropdown-container">
-            <div id="header-center-id" class="header-center">
+            <div id="header-center-id" class="sh-header-center">
                 <a href="#about">ПРО ФОНД</a>
                 <a href="#activity">НАПРЯМКИ ДІЯЛЬНОСТІ</a>
                 <a href="#partners">ПАРТНЕРИ</a>
                 <a href="other-pages/reporting.html#reporting">ЗВІТНІСТЬ</a>
             </div>
-            <div id="btn-support-container-id" class="btn-support-container">
-                <button class="btn-support">ПІДТРИМАТИ</button>
+            <div id="btn-support-container-id" class="sh-btn-support-container">
+                <button class="sh-btn-support">ПІДТРИМАТИ</button>
             </div>
         </div>
     </div>
@@ -60,7 +85,7 @@
 <div class="help-container">
     <div class="help-element">
         <div class="help-title">
-            > 40 <span class="font-24">бригадам</span>
+            > 40 <span class="help-title-low">бригадам</span>
         </div>
         <div class="help-sub-title">
             Надано допомоги військовим
@@ -69,7 +94,7 @@
     <div class="help-hr"></div>
     <div class="help-element">
         <div class="help-title">
-            > 1000 <span class="font-24">чол.</span>
+            > 1000 <span class="help-title-low">чол.</span>
         </div>
         <div class="help-sub-title">
             Допомогли військовим в<br/>реабілітації
@@ -78,7 +103,7 @@
     <div class="help-hr"></div>
     <div class="help-element">
         <div class="help-title">
-            > 7000 <span class="font-24">чол.</span>
+            > 7000 <span class="help-title-low">чол.</span>
         </div>
         <div class="help-sub-title">
             Надано допомоги цивільним
@@ -133,17 +158,12 @@
                 </div>
                 <div class="activity-item-subtitle">
                     Благодійний фонд «Твій вчинок» активно підтримує захисників, які потребують відновлення після
-                    травм.
-                    Ми
-                    забезпечуємо повний спектр послуг для повного одужання, включаючи фізичну та психологічну
-                    підтримку.
-                    Усі
-                    ці послуги надаються військовим абсолютно безкоштовно.
+                    травм. Ми забезпечуємо повний спектр послуг для повного одужання, включаючи фізичну та психологічну
+                    підтримку. Усі ці послуги надаються військовим абсолютно безкоштовно.
                 </div>
                 <div class="activity-item-subtitle">
                     Спільно з Інститутом ортопедії та травматології запущено масажний кабінет, де реабілітологи
-                    надають
-                    безкоштовну допомогу військовим.
+                    надають безкоштовну допомогу військовим.
                 </div>
                 <button class="btn-support">ОТРИМАТИ ДОПОМОГУ</button>
             </div>
@@ -156,9 +176,8 @@
                 </div>
                 <div class="activity-item-subtitle">
                     Фонд забезпечує бригади необхідними засобами для виконання завдань на передовій: дронами,
-                    аптечками,
-                    медикаментами, каріматами та іншим. Волонтери фонду регулярно виїжджають до зони бойових дій,
-                    розширюючи допомогу завдяки співпраці з іншими організаціями.
+                    аптечками, медикаментами, каріматами та іншим. Волонтери фонду регулярно виїжджають до зони бойових
+                    дій, розширюючи допомогу завдяки співпраці з іншими організаціями.
                 </div>
                 <button class="btn-support">ОТРИМАТИ ДОПОМОГУ</button>
             </div>
@@ -177,8 +196,7 @@
                 <div class="activity-item-subtitle">
                     Ми також піклуємось про дитячі будинки та дітей, які через війну залишилися без батьків. Ми
                     забезпечуємо їх солодощами, медикаментами та засобами гігієни, щоб підтримати їх у цей складний
-                    час.
-                    Наша мета — подарувати їм частинку тепла і турботи, які так необхідні кожній дитині.
+                    час. Наша мета — подарувати їм частинку тепла і турботи, які так необхідні кожній дитині.
                 </div>
                 <button class="btn-support">ОТРИМАТИ ДОПОМОГУ</button>
             </div>

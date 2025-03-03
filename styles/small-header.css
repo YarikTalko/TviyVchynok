@@ -1,12 +1,22 @@
-$laptopLarge: 1920px;
-$laptop: 1024px;
-$tablet: 768px;
-$mobileLarge: 430px;
+body {
+  --header-button-font: 16px;
+}
+@media only screen and (max-width: 2560px) and (min-width: 1920px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body {
+    --header-button-font: 12px;
+  }
+}
 
 .hamburger-menu {
   display: none;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .hamburger-menu {
     display: flex;
     width: fit-content;
     height: fit-content;
@@ -25,7 +35,7 @@ $mobileLarge: 430px;
   display: block;
 }
 
-.header {
+.small-header {
   background-color: #232B2B;
   width: 100%;
   overflow: hidden;
@@ -37,11 +47,17 @@ $mobileLarge: 430px;
   top: 0;
   position: sticky;
   z-index: 1;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .small-header {
     height: 167px;
     justify-content: center;
     overflow: visible;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .small-header {
+    display: none;
   }
 }
 
@@ -52,8 +68,9 @@ $mobileLarge: 430px;
   position: relative;
   width: 100%;
   height: 100%;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .header-lower {
     justify-content: center;
     flex-direction: column;
   }
@@ -65,8 +82,14 @@ $mobileLarge: 430px;
   justify-content: center;
   flex-grow: 1;
   gap: 32px;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 2560px) {
+  .header-dropdown-container {
+    flex-grow: 2;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-dropdown-container {
     display: none;
     flex-direction: column;
     width: calc(100% + 2 * var(--base-padding));
@@ -76,79 +99,84 @@ $mobileLarge: 430px;
   }
 }
 
-.header-center {
+.sh-header-center {
   flex: auto;
   display: flex;
   justify-content: center;
   gap: 32px;
-
-  @media only screen and (max-width: $tablet) {
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .sh-header-center {
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
 }
 
-.header-center a {
+.sh-header-center a {
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
-
-  @media only screen and (max-width: $laptop) {
-    font-size: 12px;
-  }
-
-  @media only screen and (max-width: $tablet) {
+  font-size: var(--header-button-font);
+}
+@media only screen and (max-width: 768px) {
+  .sh-header-center a {
     padding: 16px calc(var(--base-padding) + 10px);
     display: block;
   }
 }
 
-.logo-container {
+.sh-logo-container {
   flex: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-  @media (max-width: $tablet) {
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .sh-logo-container {
     align-items: center;
     width: auto;
   }
 }
 
-.logo {
+@media (max-width: 1440px) {
+  .sh-logo {
+    transform: scale(0.8);
+    transform-origin: left;
+  }
 }
 
-.logo-href {
+.sh-logo-href {
   line-height: 0;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.btn-support-container {
+.sh-btn-support-container {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .sh-btn-support-container {
     width: 100%;
     padding: 0 var(--base-padding) 32px;
   }
 }
 
-.btn-support {
-  font-size: 16px;
+.sh-btn-support {
+  font-size: var(--header-button-font);
   color: white;
   background-color: #2B59FF;
   padding: 12px 16px;
   border-radius: 4px;
   border: none;
   font-family: e-Ukraine-Regular, sans-serif;
-
-  @media only screen and (max-width: $laptop) {
-    font-size: 12px;
-  }
-
-  @media only screen and (max-width: $tablet) {
+}
+@media only screen and (max-width: 768px) {
+  .sh-btn-support {
     width: 100%;
   }
 }
@@ -156,3 +184,5 @@ $mobileLarge: 430px;
 .showMenu {
   display: flex;
 }
+
+/*# sourceMappingURL=small-header.css.map */

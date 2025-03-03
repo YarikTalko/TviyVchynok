@@ -1,0 +1,232 @@
+.fund-help-container {
+  padding: 0 var(--base-padding) 100px;
+}
+
+.charity-container {
+  width: 100%;
+  height: auto;
+  background-color: #F2F2EF;
+  border-radius: 23px;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+}
+@media only screen and (max-width: 768px) {
+  .charity-container {
+    flex-direction: column;
+    background-color: transparent;
+    padding: 0;
+    gap: 24px;
+  }
+}
+
+.charity-sub-container {
+  padding: 64px;
+  font-size: 16px;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 1024px) {
+  .charity-sub-container {
+    padding: 48px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .charity-sub-container {
+    padding: 32px;
+    width: 100%;
+    background-color: #F2F2EF;
+    border-radius: 12px;
+    gap: 48px;
+  }
+}
+
+.charity-header {
+  font-family: e-Ukraine-Medium, sans-serif;
+  font-size: 28px;
+}
+@media only screen and (max-width: 768px) {
+  .charity-header {
+    margin: 0;
+  }
+}
+
+.charity-table {
+  font-size: var(--charity-font-size);
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.charity-row {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1440px) {
+  .charity-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .charity-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.main-td {
+  font-family: e-Ukraine-Light, sans-serif;
+  width: 30%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+@media only screen and (max-width: 1440px) {
+  .main-td {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-td {
+    width: 100%;
+  }
+}
+
+.sub-td {
+  width: 60%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+@media only screen and (max-width: 1440px) {
+  .sub-td {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sub-td {
+    font-family: e-Ukraine-Regular, sans-serif;
+    font-size: 20px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .sub-td {
+    font-size: 16px;
+  }
+}
+
+.qr-container {
+  background-color: hsla(227, 100%, 58%, 0.1);
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 45%;
+}
+@media only screen and (max-width: 768px) {
+  .qr-container {
+    max-width: 100%;
+  }
+}
+
+.qr-container-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  font-size: 15px;
+  gap: 25px;
+}
+@media only screen and (max-width: 1440px) {
+  .qr-container-top {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .qr-container-top {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .qr-container-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .qr-container-top img {
+    width: 208px;
+    height: 35px;
+  }
+  .qr-container-top .qr-container-top-title {
+    font-size: 16px;
+  }
+}
+
+.qr-container-top-title {
+  font-family: e-Ukraine-Light, sans-serif;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 426px) {
+  .qr-container-top-title {
+    text-align: center;
+  }
+}
+
+.qr-container-main-title {
+  font-family: e-Ukraine-Medium, sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+@media only screen and (max-width: 376px) {
+  .qr-container-main-title {
+    font-size: 24px;
+  }
+}
+
+.qr-code {
+  display: flex;
+  align-items: center;
+}
+.qr-code img {
+  width: 214px;
+  height: 214px;
+  margin: 48px auto;
+}
+@media only screen and (max-width: 426px) {
+  .qr-code img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.instruction-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+@media only screen and (max-width: 768px) {
+  .instruction-container {
+    gap: 16px;
+    padding: 0;
+  }
+}
+
+.instruction-container-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.instruction-container-number {
+  width: 32px;
+  height: 32px;
+}
+
+/*# sourceMappingURL=fund-help.css.map */

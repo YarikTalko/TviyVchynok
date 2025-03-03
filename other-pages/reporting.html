@@ -5,22 +5,53 @@
     <title>Звітність</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/reporting.css">
-    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/small-header.css">
+    <link rel="stylesheet" href="../styles/big-header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <script src="../scripts/dropdown.js"></script>
 </head>
 <body>
-<div class="header">
-    <div>
-        <img class="logo" src="../images/logos/logo.svg" alt="logo">
+
+<div class="big-header">
+    <div class="bh-logo-container">
+        <a class="bh-logo-href" href="../index.html">
+            <img class="bh-logo" src="../images/logos/logo.svg" alt="logo">
+        </a>
     </div>
-    <div class="header-center">
+    <div class="bh-header-center">
         <a href="../index.html#about">ПРО ФОНД</a>
         <a href="../index.html#activity">НАПРЯМКИ ДІЯЛЬНОСТІ</a>
         <a href="../index.html#partners">ПАРТНЕРИ</a>
         <a href="#reporting">ЗВІТНІСТЬ</a>
     </div>
-    <div>
-        <button class="btn-support">ПІДТРИМАТИ</button>
+    <div class="bh-btn-support-container">
+        <button class="bh-btn-support">ПІДТРИМАТИ</button>
+    </div>
+</div>
+
+<div class="small-header">
+    <div class="header-lower">
+        <div class="hamburger-menu">
+            <button onclick="dropdownMenu()" class="hamburger-menu-button" type="button">
+                <img src="../images/hamburger_menu.svg" alt="hamburger menu" id="hamburger-menu-button-id">
+            </button>
+        </div>
+        <div class="sh-logo-container">
+            <a class="sh-logo-href" href="../index.html">
+                <img class="sh-logo" src="../images/logos/logo.svg" alt="logo">
+            </a>
+        </div>
+        <div id="header-dropdown-container-id" class="header-dropdown-container">
+            <div id="header-center-id" class="sh-header-center">
+                <a href="../index.html#about">ПРО ФОНД</a>
+                <a href="../index.html#activity">НАПРЯМКИ ДІЯЛЬНОСТІ</a>
+                <a href="../index.html#partners">ПАРТНЕРИ</a>
+                <a href="#reporting">ЗВІТНІСТЬ</a>
+            </div>
+            <div id="btn-support-container-id" class="sh-btn-support-container">
+                <button class="sh-btn-support">ПІДТРИМАТИ</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -68,10 +99,10 @@
         </div>
         <div class="footer-item">
             <div class="footer-line">Розділи</div>
-            <div class="footer-line"><a href="#about">Про фонд</a></div>
-            <div class="footer-line"><a href="#activity">Напрямки діяльності</a></div>
-            <div class="footer-line"><a href="#partners">Партнери</a></div>
-            <div class="footer-line"><a href="#">Звітність</a></div>
+            <div class="footer-line"><a href="../index.html#about">Про фонд</a></div>
+            <div class="footer-line"><a href="../index.html#activity">Напрямки діяльності</a></div>
+            <div class="footer-line"><a href="../index.html#partners">Партнери</a></div>
+            <div class="footer-line"><a href="#reporting">Звітність</a></div>
         </div>
     </div>
     <hr class="footer-hr">

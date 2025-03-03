@@ -1,8 +1,28 @@
+$fourthKey: 2560px;
+$intermediateResolution: 1920px;
+$laptopLarge: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobileLarge: 426px;
+$mobileMedium: 376px;
+$mobileSmall: 320px;
+
+body {
+  --header-button-font: 16px;
+
+  @media only screen and (max-width: $fourthKey) and (min-width: $intermediateResolution) {
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width: $laptopLarge) and (min-width: $laptop) {
+    --header-button-font: 12px;
+  }
+}
+
 .hamburger-menu {
   display: none;
-}
-@media only screen and (max-width: 768px) {
-  .hamburger-menu {
+
+  @media only screen and (max-width: $tablet) {
     display: flex;
     width: fit-content;
     height: fit-content;
@@ -21,7 +41,7 @@
   display: block;
 }
 
-.header {
+.small-header {
   background-color: #232B2B;
   width: 100%;
   overflow: hidden;
@@ -33,12 +53,15 @@
   top: 0;
   position: sticky;
   z-index: 1;
-}
-@media only screen and (max-width: 768px) {
-  .header {
+
+  @media only screen and (max-width: $tablet) {
     height: 167px;
     justify-content: center;
     overflow: visible;
+  }
+
+  @media only screen and (min-width: calc($tablet + 1px)) {
+    display: none;
   }
 }
 
@@ -49,9 +72,8 @@
   position: relative;
   width: 100%;
   height: 100%;
-}
-@media only screen and (max-width: 768px) {
-  .header-lower {
+
+  @media only screen and (max-width: $tablet) {
     justify-content: center;
     flex-direction: column;
   }
@@ -63,9 +85,12 @@
   justify-content: center;
   flex-grow: 1;
   gap: 32px;
-}
-@media only screen and (max-width: 768px) {
-  .header-dropdown-container {
+
+  @media only screen and (max-width: $fourthKey) {
+    flex-grow: 2;
+  }
+
+  @media only screen and (max-width: $tablet) {
     display: none;
     flex-direction: column;
     width: calc(100% + 2 * var(--base-padding));
@@ -75,83 +100,80 @@
   }
 }
 
-.header-center {
+.sh-header-center {
   flex: auto;
   display: flex;
   justify-content: center;
   gap: 32px;
-}
-@media only screen and (max-width: 768px) {
-  .header-center {
+  align-items: center;
+
+  @media only screen and (max-width: $tablet) {
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
 }
 
-.header-center a {
+.sh-header-center a {
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
-}
-@media only screen and (max-width: 1024px) {
-  .header-center a {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .header-center a {
+  font-size: var(--header-button-font);
+
+  @media only screen and (max-width: $tablet) {
     padding: 16px calc(var(--base-padding) + 10px);
     display: block;
   }
 }
 
-.logo-container {
+.sh-logo-container {
   flex: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-@media (max-width: 768px) {
-  .logo-container {
+  height: 100%;
+
+  @media (max-width: $tablet) {
     align-items: center;
     width: auto;
   }
 }
 
-.logo-href {
-  line-height: 0;
+.sh-logo {
+
+  @media (max-width: $laptopLarge) {
+    transform: scale(0.8);
+    transform-origin: left;
+  }
 }
 
-.btn-support-container {
+.sh-logo-href {
+  line-height: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sh-btn-support-container {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-}
-@media only screen and (max-width: 768px) {
-  .btn-support-container {
+
+  @media only screen and (max-width: $tablet) {
     width: 100%;
     padding: 0 var(--base-padding) 32px;
   }
 }
 
-.btn-support {
-  font-size: 16px;
+.sh-btn-support {
+  font-size: var(--header-button-font);
   color: white;
   background-color: #2B59FF;
   padding: 12px 16px;
   border-radius: 4px;
   border: none;
   font-family: e-Ukraine-Regular, sans-serif;
-}
-@media only screen and (max-width: 1024px) {
-  .btn-support {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .btn-support {
+
+  @media only screen and (max-width: $tablet) {
     width: 100%;
   }
 }
@@ -159,5 +181,3 @@
 .showMenu {
   display: flex;
 }
-
-/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,11 @@
+.partners-container {
+  padding: 0 var(--base-padding) 100px;
+  background-color: #F2F2EF;
+}
+@media only screen and (max-width: 768px) {
+  .partners-container {
+    padding-bottom: 32px;
+  }
+}
+
+/*# sourceMappingURL=partners.css.map */

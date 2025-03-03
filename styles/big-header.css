@@ -1,0 +1,96 @@
+body {
+  --header-button-font: 16px;
+}
+@media only screen and (max-width: 2560px) and (min-width: 1920px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  body {
+    --header-button-font: 12px;
+  }
+}
+
+.big-header {
+  background-color: #232B2B;
+  width: 100%;
+  overflow: hidden;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--base-padding);
+  height: 113px;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  .big-header {
+    display: none;
+  }
+}
+
+.bh-header-center {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+}
+
+.bh-header-center a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--header-button-font);
+}
+
+.bh-logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .bh-logo-container {
+    align-items: center;
+    width: auto;
+  }
+}
+
+@media (max-width: 1440px) {
+  .bh-logo {
+    transform: scale(0.8);
+    transform-origin: left;
+  }
+}
+
+.bh-logo-href {
+  line-height: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bh-btn-support-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bh-btn-support {
+  font-size: var(--header-button-font);
+  color: white;
+  background-color: #2B59FF;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: none;
+  font-family: e-Ukraine-Regular, sans-serif;
+}
+
+.showMenu {
+  display: flex;
+}
+
+/*# sourceMappingURL=big-header.css.map */

@@ -1,0 +1,16 @@
+$fourthKey: 2560px;
+$laptopLarge: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobileLarge: 426px;
+$mobileMedium: 376px;
+$mobileSmall: 320px;
+
+.partners-container {
+  padding: 0 var(--base-padding) 100px;
+  background-color: #F2F2EF;
+
+  @media only screen and (max-width: $tablet) {
+    padding-bottom: 32px;
+  }
+}

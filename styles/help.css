@@ -1,0 +1,54 @@
+.help-hr {
+  border-right: 1px solid #C9C9C9;
+}
+@media only screen and (max-width: 768px) {
+  .help-hr {
+    border-right: none;
+    border-bottom: 1px solid #C9C9C9;
+    width: 85px;
+    margin: 0 auto;
+  }
+}
+
+.help-title {
+  font-family: e-Ukraine-Medium, sans-serif;
+  color: #2B59FF;
+  font-size: 48px;
+  margin: 0 0 32px 0;
+}
+@media only screen and (max-width: 1440px) {
+  .help-title {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .help-title {
+    font-size: 30px;
+  }
+}
+
+.help-title-low {
+  font-size: 24px;
+}
+@media only screen and (max-width: 1440px) {
+  .help-title-low {
+    font-size: 20px;
+  }
+}
+
+.help-sub-title {
+  font-size: 20px;
+  color: #232B2B;
+}
+@media only screen and (max-width: 1440px) {
+  .help-sub-title {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .help-sub-title {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=help.css.map */

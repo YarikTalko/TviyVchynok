@@ -1,0 +1,103 @@
+.about-text {
+  margin: 24px 0;
+  font-family: e-Ukraine-Light, sans-serif;
+  line-height: 1.8;
+}
+@media only screen and (max-width: 768px) {
+  .about-text {
+    text-align: justify;
+    margin: 0 0 24px;
+  }
+}
+
+.our-team {
+  font-size: 24px;
+  margin: 78px 0 48px;
+}
+@media only screen and (max-width: 1024px) {
+  .our-team {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .our-team {
+    margin: 50px 0 24px;
+  }
+}
+
+.team {
+  display: flex;
+  gap: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .team {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.team-member {
+  display: flex;
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .team-member {
+    width: 100%;
+  }
+}
+
+.team-member-photo {
+  border-radius: 70px;
+  width: 175px;
+  height: 190px;
+}
+@media only screen and (max-width: 1024px) {
+  .team-member-photo {
+    width: 30%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .team-member-photo {
+    width: 40%;
+    height: auto;
+  }
+}
+
+.team-member-name-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  .team-member-name-container {
+    width: 70%;
+  }
+}
+
+.team-member-name {
+  font-family: e-Ukraine-Light, sans-serif;
+  margin: auto;
+  text-align: center;
+  line-height: 1.4;
+  width: 230px;
+}
+@media only screen and (max-width: 1024px) {
+  .team-member-name {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .team-member-name {
+    font-size: 22px;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .team-member-name {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */
