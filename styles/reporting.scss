@@ -1,3 +1,11 @@
+$fourthKey: 2560px;
+$laptopLarge: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobileLarge: 426px;
+$mobileMedium: 376px;
+$mobileSmall: 320px;
+
 .report {
   padding: 0 var(--base-padding);
 }
@@ -10,16 +18,38 @@
   font-family: e-Ukraine-Bold, sans-serif;
   font-size: 30px;
   margin-bottom: 50px;
+  
+  @media only screen and (max-width: $tablet) {
+    text-align: center;
+  }
 }
 
 .documents {
   display: flex;
   gap: 50px;
   margin-bottom: 100px;
+  
+  @media screen and (max-width: $laptopLarge) {
+    gap: 5%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    gap: 20px;
+  }
 
   img {
     width: 240px;
     height: 339px;
     border-radius: 30px;
+
+    @media only screen and (max-width: $laptopLarge) {
+      width: 20%;
+      height: auto;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
   }
 }
