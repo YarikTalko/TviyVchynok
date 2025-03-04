@@ -85,6 +85,11 @@ body {
   }
 }
 
+.bh-btn-support:active {
+  color: #2B59FF;
+  background-color: white;
+}
+
 .showMenu {
   display: flex;
 }

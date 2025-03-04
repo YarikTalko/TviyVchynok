@@ -148,9 +148,8 @@ body {
 }
 
 .sh-btn-support-container {
-  flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 @media only screen and (max-width: 768px) {
   .sh-btn-support-container {
@@ -172,6 +171,11 @@ body {
   .sh-btn-support {
     width: 100%;
   }
+}
+
+.sh-btn-support:active {
+  color: #2B59FF;
+  background-color: white;
 }
 
 .showMenu {

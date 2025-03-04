@@ -92,6 +92,12 @@ $mobileSmall: 320px;
   }
 }
 
+.btn-support:active {
+  color: #2B59FF;
+  background-color: white;
+  border: 1px solid #2B59FF;
+}
+
 .activity-item-title {
   font-family: e-Ukraine-Medium, sans-serif;
   font-size: 26px;
