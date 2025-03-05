@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/big-header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="icon" type="image/svg" href="images/other/logos/favicon.svg">
+    <script src="scripts/document.js"></script>
     <title>Звітність</title>
     <script src="scripts/dropdown.js"></script>
 </head>
@@ -67,15 +68,28 @@
         <div class="sub-header">Юридичні документи БФ</div>
         <hr>
         <div class="documents">
-            <img src="images/documents/Statut-s1.jpeg" alt="document_1" class="document_image">
-            <img src="images/documents/Statut-s2.jpeg" alt="document_2" class="document_image">
-            <img src="images/documents/Vypyska.jpeg" alt="document_3" class="document_image">
-            <img src="images/documents/Vytyah.jpeg" alt="document_4" class="document_image">
+            <div class="document-image-container">
+                <img src="images/documents/Statut-s1.jpeg" alt="document_1" class="document-image"
+                     onclick="enlargeImg(this.id)" id="document_1">
+            </div>
+            <div class="document-image-container">
+                <img src="images/documents/Statut-s2.jpeg" alt="document_2" class="document-image"
+                     onclick="enlargeImg(this.id)" id="document_2">
+            </div>
+            <div class="document-image-container">
+                <img src="images/documents/Vypyska.jpeg" alt="document_3" class="document-image"
+                     onclick="enlargeImg(this.id)" id="document_3">
+            </div>
+            <div class="document-image-container">
+                <img src="images/documents/Vytyah.jpeg" alt="document_4" class="document-image"
+                     onclick="enlargeImg(this.id)" id="document_4">
+            </div>
         </div>
         <div class="sub-header">Звіти про рух грошових коштів</div>
         <div>Ознайомитись із усіма звітами про рух грошових коштів можна
             <a href="https://drive.google.com/drive/folders/1Tq9bYTiZGP7jU8e22I3dQgGxp4pznDbl?usp=drive_link"
-               target="_blank">тут</a>.</div>
+               target="_blank">тут</a>.
+        </div>
         <hr>
     </div>
 </div>
